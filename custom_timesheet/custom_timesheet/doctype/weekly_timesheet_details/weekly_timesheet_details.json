@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "creation": "2023-11-17 17:50:07.051050",
+ "default_view": "List",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "project_name",
+  "column_break_2",
+  "activity_type",
+  "project_details",
+  "sunday",
+  "monday",
+  "tuesday",
+  "wednesday",
+  "section_break_3",
+  "thursday",
+  "friday",
+  "saturday",
+  "section_break_gnylh",
+  "week_total",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "read_only_depends_on": "eval: parent.parent_project"
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "activity_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Activity Type",
+   "options": "Activity Type"
+  },
+  {
+   "columns": 1,
+   "fieldname": "week_total",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Week Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "project_details",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "sunday",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Sunday"
+  },
+  {
+   "columns": 1,
+   "fieldname": "monday",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Monday"
+  },
+  {
+   "columns": 1,
+   "fieldname": "tuesday",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Tuesday"
+  },
+  {
+   "columns": 1,
+   "fieldname": "wednesday",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Wednesday"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "thursday",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Thursday"
+  },
+  {
+   "columns": 1,
+   "fieldname": "friday",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Friday"
+  },
+  {
+   "columns": 1,
+   "fieldname": "saturday",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Saturday"
+  },
+  {
+   "fieldname": "section_break_gnylh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2023-11-17 18:04:26.400791",
+ "modified_by": "Administrator",
+ "module": "Custom Timesheet",
+ "name": "Weekly Timesheet Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "states": []
+}
